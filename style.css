@@ -1,0 +1,46 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: blue;
+}
+input#check{
+	display: none;
+}
+label#nut{
+	width: 30px;
+	height: 30px;
+	background: blue;
+	display: inline-block;
+}
+label#mask{
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	background: rgba(0,0,0,0.5);
+}
+div#menu{
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 150px;
+	top: 0px;
+	background: red;
+}
+input#check:checked +label#mask{
+	display: block;
+}
+input#check:checked +label#mask+ div#menu{
+	display: block;
+}
+div#back{
+	height: 30px;
+	background: black;
+}
+div#back label#nut1{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
